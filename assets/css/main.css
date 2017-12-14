@@ -8,6 +8,11 @@ Botones, hover: `#FF00BF`
  - Gradiente morado: `linear-gradient(#76278F, #2B1E66);
  */
 
+* {
+  min-width: 576px;
+  max-width: 767px;
+}
+
 body {
   background-color: #000;
 }
@@ -18,8 +23,9 @@ body {
 
 .loading #loader {
   background: linear-gradient(to bottom right,#50025D, #E60A89);
+  background-position: center center;
   height: 530px;
-  width: 110%;
+  width: 100%;
   z-index: 100;
   position: absolute;
 }
@@ -45,6 +51,7 @@ body {
   height: 530px;
   z-index: -100;
   background-attachment: local;
+  background-position: center center;
 }
 
 .loading .btn {
