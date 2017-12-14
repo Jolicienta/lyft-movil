@@ -9,12 +9,13 @@ Botones, hover: `#FF00BF`
  */
 
 * {
-  min-width: 576px;
-  max-width: 767px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   background-color: #000;
+  min-width: 576px;
+  max-width: 767px;
 }
 
 .loading {
