@@ -8,13 +8,50 @@ Botones, hover: `#FF00BF`
  - Gradiente morado: `linear-gradient(#76278F, #2B1E66);
  */
 
-.loading {
-  background: linear-gradient(to bottom right,#50025D, #E60A89);
-  height: 502px;
+body {
+  background-color: #000;
 }
 
-#logo {
+.loading {
+  padding: 0;
+}
+
+.loading #loader {
+  background: linear-gradient(to bottom right,#50025D, #E60A89);
+  height: 530px;
+  width: 110%;
+  z-index: 100;
+  position: absolute;
+}
+
+.loading #logo {
   background-size: cover;
   height: 120px;
   margin-top: 60%;
+  z-index: 1000;
+}
+
+.loading #loguito {
+  background-size: cover;
+  height: 50px;
+  margin-top: 5%;
+  z-index: 0;
+  position: absolute;
+  margin-left: 40%;
+}
+
+.loading #background {
+  background-size: cover;
+  height: 530px;
+  z-index: -100;
+  background-attachment: local;
+}
+
+.loading .btn {
+  position: absolute;
+  border: 1px solid;
+  border-radius: 3px;
+  margin-top: 155%;
+  background-color: transparent;
+  color: white;
 }
